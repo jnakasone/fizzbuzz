@@ -3,7 +3,6 @@ let output = document.getElementById("output");
 
 for(let i = 1; i <=100; i++) {
 	if (i % 3 === 0 && i % 5 ===0) {
-		//output.insertAdjacentHTML('beforeend', '<div>FizzBuzz</div>');
 		let li = document.createElement("li");
 		li.appendChild(document.createTextNode("FizzBuzz"));
 		output.appendChild(li);
@@ -22,7 +21,5 @@ for(let i = 1; i <=100; i++) {
 		let li = document.createElement("li");
 		li.appendChild(document.createTextNode(i));
 		output.appendChild(li);
-		//output.insertAdjacentHTML('beforeend', '</div>');
-		//console.log(i + "\n");
 	}
 }
